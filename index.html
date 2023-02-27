@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>John Doe - Curriculum Vitae</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script type="text/javascript" src="api.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1>Curriculm Vitae</h1>
+    </header>
+    
+    <section id="personal-info">
+        <div>
+            <span id="avatar"></span>
+            <h2>
+                <strong>Nombre:</strong> 
+                <span id="name"></span>
+                <span id="last-name"> </span>
+            </h2>
+            <p>Desarrollador WEB Junior</p>
+            <h1>Informacion Personal</h1>
+            <p>
+                <strong>Edad:</strong> 
+                <span id="age"></span>
+            </p>
+            <p>
+                <strong>Dirección:</strong> 
+                <span id="location-street-name"></span>
+                <span id="location-street-number"></span>,
+                <span id="location-city"></span>,
+                <span id="location-state"></span>
+            </p>
+            <p>
+                <strong>Celular:</strong>
+                <span id="phone"></span>
+            </p>
+            <p>
+                <strong>Email:</strong>
+                <span id="email"></span>
+            </p>
+        </div>
+    </section>
+    
+    <section id="job-experience">
+        <div>
+            <h1>Experiencia Laboral</h1>
+            <h4>07/2021 - Actualidad. Programadora web, Sistemas Informáticos, Arg.</h4>
+            <ul>
+                <li>Desarrollo de aplicaciones web para clientes de la empresa del sector financiero utilizando Javascript, PHP</li>
+
+                <li>Mantenimiento de aplicaciones web</li>
+                
+                <li>Maquetación HTML5, CSS3, Bootstrap</li>
+                
+                <li>Manejo de datos XML, JSON</li>
+            </ul>
+        </div>
+    </section>
+        
+    <section id="hobbies">
+        <div>
+            <h1>Hobbies</h1>
+            <ul>
+                <li>
+                    <img src="https://img.icons8.com/color/256/chef-cooking.png" alt="Hobby">
+                    <div id="text">Cocinar</div>
+                </li>
+                <li>
+                    <img src="https://img.icons8.com/color/256/beach-soccer.png" alt="Hobby">
+                    <div id="text">Futbol</div>
+                </li>
+                <li>
+                    <img src="https://img.icons8.com/color/256/guitarist.png" alt="Hobby">
+                    <div id="text">Guitarra</div>
+                </li>
+                <li>
+                    <img src="https://img.icons8.com/color/256/artist-skin-type-3.png" alt="Hobby">
+                    <div id="text">Pintar</div>
+                </li>
+                </ul>
+                
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div>
+        <h1>Skills</h1>
+        
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+   </section>
+    <script>
+        // JavaScript code to add effects to images
+        const images = document.querySelectorAll('#hobbies li img');
+        
+        images.forEach((image) => {
+            image.addEventListener('mouseover', () => {
+                image.style.filter = 'grayscale(100%)';                
+            });
+            
+            image.addEventListener('mouseout', () => {
+                image.style.filter = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+
+            
+           
