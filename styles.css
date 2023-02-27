@@ -173,3 +173,11 @@ transition: transform 0.3s;
 #skills li:hover {
 transform: translateY(-5px);
 }
+
+@media only screen and (max-width: 700px) {
+
+    body { 
+       font-size: 2vw; 
+    }
+ 
+ }
